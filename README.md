@@ -93,11 +93,11 @@ Ensuite, nous avons réalisé une seconde simulation afin d'observer la réponse
 
 ------------
 ## 2. Design du PCB sous Kicad
-Après avoir réalisés les simulations sur LTSpice, nous avons conçu notre PCB à l’aide du logiciel KiCad. Pour cela, nous sommes parties du schéma du montage décrit précédemment, auquel nous avons apporté quelques modifications.
-Parmi ces modifications, nous avons notamment remplacé la résistance R2 par un potentiomètre numérique permettant un réglage précis du gain de l’amplificateur. Nous avons également ajouté plusieurs composants afin d’améliorer les fonctionnalités de notre système et de comparer les résultats obtenus :
-* Le module Bluetooth HC-05 : permet d'assurer la communication entre le PCB et un téléphone via une application Android.
+Après avoir réalisé les simulations sur LTSpice, nous avons conçu notre PCB à l’aide du logiciel KiCad. Pour cela, nous sommes parties du schéma du montage décrit précédemment, auquel nous avons apporté quelques modifications.
+Parmi ces modifications, nous avons notamment remplacé la résistance R2 par un potentiomètre numérique permettant un réglage précis du gain de l’amplificateur, tout en évitant la saturation. Nous avons également ajouté plusieurs composants afin d’améliorer les fonctionnalités de notre système et de comparer les résultats obtenus :
+* Le module Bluetooth HC-05 : permet d'assurer la communication entre le PCB et un smartphone via une application Android.
 * Un écran OLED : utilisé pour afficher différents menus en temps réel.
-* Un encodeur rotatif : facilite la navigation entre les différentes options affichées sur l’écran OLED.
+* Un encodeur rotatif : contrôle la navigation entre les différentes options affichées sur l’écran OLED.
 * Un flex sensor : utilisé pour comparer les mesures du capteur en graphite avec celles d’un capteur commercial lors des tests finaux
 
 __Création des bibliothèques et symboles__  
