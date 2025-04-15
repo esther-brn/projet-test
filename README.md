@@ -125,9 +125,6 @@ L’image ci-dessous illustre la modélisation 3D de l’écran OLED.
   <img src="Images/modèle3D-arrière-OLED-Kicad.PNG" alt="Image circuit LTSpice" width="310">
 </p>
 
-
-Ensuite, nous avons procédé à la création de la schématique électrique de l'ensemble du montage. Lors de cette étape, nous avons choisi un modèle basé sur l'Arduino UNO pour avoir les bonnes dimensions de la carte et les pins de connexion adaptées. Lors de cette étape, nous avons dû concevoir certains composants électroniques nous-mêmes dans la partie Schématique (écran OLED, module Bluetooth, l'amplificateur LTC1050C, l'encodeur rotatoire et le potentiomètre digital).
-
 __Création de la schématique électrique__
 
 Après avoir défini les empreintes et les modèles 3D des composants, nous avons procédé à la création de la schématique électrique du montage. Lors de cette étape, nous avons opté pour un modèle basé sur l’Arduino UNO afin de garantir la correspondance correcte des pins de connexion avec l’Arduino.
@@ -135,8 +132,6 @@ Après avoir défini les empreintes et les modèles 3D des composants, nous avon
 <p align="center">
   <img src="Images/schématique-Kicad.PNG" alt="Image circuit LTSpice" width="600">
 </p>
-
-Enfin, nous sommes passés à la disposition des composants sur le PCB. L’objectif est de les disposer en considérant les connexions entre les composants et éviter d'avoir recours aux vias. Les image ci-dessous correspondent au résultat final de notre PCB et sa vue en 3D correspondante :
 
 __Disposition des composants sur le PCB__
 
