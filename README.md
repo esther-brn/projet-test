@@ -164,7 +164,7 @@ Ci-dessous, une vidéo illustrant les différents menus accessibles sur l’écr
 
 ------------
 ## 4. Application Android
-Nous avons également réalisé une application Android développé sous [MIT App Inventor](https://appinventor.mit.edu/).
+Nous avons également réalisé une application Android développée sous [MIT App Inventor](https://appinventor.mit.edu/).
 
 <p align="center">
   <img src="Images/face-avant-app.png" alt="Face avant application" width="280">
@@ -212,8 +212,6 @@ Les tests ont été réalisés en tension et en compression sur des capteurs à 
   <img src="Images/flex-comp-capteur.PNG" alt="Schéma compression et tension" width="260">
 </p>
 
-Nous avons réalisé les tests avec des capteurs recouverts de trois types de graphite différents : d'un crayon 6B, 4B, B et HB. Nous avons utiliser de la pate à fixe pour maintenir les capteurs en papier sur le banc de test sans avoir à toucher lors des mesures.  
-
 Ces capteurs ont été fabriqués à l’aide de quatre types de graphite différents : des crayons 6B, 4B, B et HB. Pour maintenir les capteurs en papier sur le banc de test sans les toucher pendant les mesures, nous avons utilisé de la pâte à fixe.
 
 <p align="center">
@@ -236,15 +234,15 @@ La courbe ci-dessous présente le comportement du capteur commercial pour une d�
   <img src="Images/courbe-tension-flex-sensor.PNG" alt="Courbe de déformation en tension flex sensor" width="370">
 </p>
 
-On remarque que lorsque le capteur graphite est soumis à une déformation en tension, la résistance du capteur augmente. Ce phénomène est attendu : en tension, les distances interatomiques entre les atomes de carbone s’allongent, ce qui freine le passage du courant et augmente la résistance. A l’inverse, lors d’une compression, les atomes se rapprochent, facilitant le passage du courant et donc la résistance diminue.  
+On remarque que lorsque le capteur graphite est soumis à une déformation en tension, la résistance du capteur augmente. Ce phénomène est attendu : en tension, les distances entre les nanoparticules de graphite s’allongent, ce qui freine le passage du courant et augmente la résistance. A l’inverse, lors d’une compression, les grains se rapprochent, facilitant le passage du courant et donc la résistance diminue.  
 
-Les résultats montrent aussi que le type de crayon utilisé influence fortement les valeurs de résistance mesurées. Plus un crayon est gras (comme le 6B ou le 4B), plus il dépose de carbone sur le papier, ce qui réduit la résistance globale du capteur. Les courbes indiquent également que plus un crayon est gras, moins la variation relative de la résistance est importante. Autrement dit, les capteurs réalisés avec des crayons plus gras sont moins sensibles à la déformation.  
+Les résultats montrent aussi que le type de crayon utilisé influence fortement les valeurs de résistance mesurées. Plus un crayon est gras (comme le 6B ou le 4B), plus il dépose de graphite sur le papier, ce qui réduit la résistance globale du capteur. Les courbes indiquent également que plus un crayon est gras, moins la variation relative de la résistance est importante. Autrement dit, les capteurs réalisés avec des crayons plus gras sont moins sensibles à la déformation.  
 
-Ces résultats expérimentaux permettent de conclure que le capteur commercial est globalement plus sensible à la déformation que les capteurs en graphite. De plus, il présente une bien meilleure robustesse : les capteurs en graphite sont fragiles et le simple fait de toucher leur surface peut altérer le dépôt de graphite, faussant les mesures qui suivent, il faut les manipuler avec beaucoup de précaution. Leur durée de vie est aussi limitée, en particulier lorsqu’ils sont soumis à de fortes déformations. Entre chaque série de tests (tension ou compression), il a été nécessaire de fabriquer un nouveau capteur, car la résistance au repos changeait significativement après les premières déformations.  
+Ces résultats expérimentaux permettent de conclure que le capteur commercial est globalement plus sensible à la déformation que les capteurs en graphite. De plus, il présente une bien meilleure robustesse : les capteurs en graphite sont fragiles et le simple fait de toucher leur surface peut altérer le dépôt de graphite, faussant les mesures qui suivent. Il faut les manipuler avec beaucoup de précaution. Leur durée de vie est aussi limitée, en particulier lorsqu’ils sont soumis à de fortes déformations. Entre chaque série de tests (tension ou compression), il a été nécessaire de fabriquer un nouveau capteur, car la résistance au repos changeait significativement après les premières déformations.  
 
 Il est important de noter que plusieurs facteurs peuvent influencer les résultats, notamment la quantité de graphite déposée sur le papier, qui est difficile à maîtriser précisément. Cette variabilité peut entraîner des écarts non négligeables dans les mesures. Une amélioration possible consisterait à développer un procédé de dépôt de graphite d’une quantité fixe et reproductible, ainsi qu’un système de protection de la face du capteur contenant le trait de graphite pour éviter la perte de matière au contact.  
 
-Le capteur commercial s'avère donc plus précis, plus résistant, et mieux adapté à des mesures répétées ou à des déformations importantes. En revanche, les capteurs en graphite présentent l’avantage de pouvoir mesurer des déformations en compression, contrairement au flex-sensor.
+Le capteur commercial s'avère donc plus précis, plus robuste, et mieux adapté à des mesures répétées ou à des déformations importantes. En revanche, les capteurs en graphite présentent l’avantage de pouvoir mesurer des déformations en compression, contrairement au flex-sensor.
 
 ------------
 ## 8. Datasheet du capteur
