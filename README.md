@@ -108,8 +108,6 @@ La première étape de la conception a consisté à créer notre propre biblioth
   <img src="Images/symbole-OLED-Kicad.PNG" alt="Image circuit LTSpice" width="250">
 </p>
 
-La deuxième étape a été de créer les empreintes de nos composants. Pour cela, nous devions tenir compte des dimensions de nos composants et de leurs caractéristiques comme le diamètre des trous. Ci-dessous, l’empreinte de l’écran OLED.
-
 __Création des empreintes des composants__
 
 La deuxième étape a consisté à créer les empreintes des composants. Cette phase est essentielle pour garantir une bonne intégration des composants sur le circuit imprimé. Pour cela, nous avons pris en compte la dimension physique des composants ainsi que le diamètre des trous. L’image ci-dessous illustre l’empreinte de l’écran OLED.
@@ -118,7 +116,7 @@ La deuxième étape a consisté à créer les empreintes des composants. Cette p
   <img src="Images/empreinte-OLED-Kicad.PNG" alt="Image circuit LTSpice" width="230">
 </p>
 
-Afin d’obtenir une visualisation 3D réaliste de notre PCB final, nous avons associé à chaque empreinte une modélisation 3D de son composant correspondant. Cette étape permet de vérifier l’agencement des composants, d’anticiper d’éventuels problèmes d’encombrement et d’optimiser le design du circuit imprimé.
+Afin d’obtenir une visualisation 3D réaliste de notre PCB final, nous avons associé à chaque empreinte une modélisation 3D du composant correspondant. Cette étape permet de vérifier l’agencement des composants, d’anticiper d’éventuels problèmes d’encombrement et d’optimiser le design du circuit imprimé.
 Les modèles 3D utilisés ont été récupérés sur la plateforme GrabCAD, qui propose une large bibliothèque de fichiers compatibles avec KiCad.
 L’image ci-dessous illustre la modélisation 3D de l’écran OLED.
 
