@@ -38,7 +38,7 @@ Plusieurs livrables sont attendus :
 
 ✓ Un code Arduino assurant le contrôle de l’ensemble des composants et la réalisation des mesures.<br>
 
-✓ Une application Android servant d’interface entre le PCB et le code Arduino.<br>
+✓ Une application Android permettant de visualiser les mesures depuis un smartphone.<br>
 
 ✓ Un code Arduino dédié aux essais du capteur sur le banc de test.<br>
 
@@ -64,7 +64,7 @@ Pour le reste du dispositif :
 * Une carte Arduino UNO
 ------------
 ## 1. Simulation électronique sous LTSpice
-Notre objectif est d’extraire l’information utile de notre capteur en graphite, dont la résistance est de l’ordre du gigaohm (GΩ). Sous une tension de 5V, correspondant à celle délivrée par l’Arduino, le capteur délivre un courant extrêmement faible, de l’ordre de quelques nanoampères (nA). Or selon les caractéristiques techniques de l’Arduino (cf [datasheet](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)), un courant aussi faible ne peut pas être mesuré directement. Il est donc nécessaire de l’amplifier en utilisant un amplificateur de transimpédance, qui convertit ce courant en une tension exploitable par le convertisseur analogique-numérique (CAN) de l’Arduino. Pour cela, nous avons choisi l’amplificateur opérationnel  LTC1050.
+Notre objectif est de mesurer la résistance de notre capteur en graphite puis de retrouver sa déformation par une relation de proportionalité. Nous savons que la résistance est de l’ordre du gigaohm (GΩ). Sous une tension de 5V, correspondant à celle délivrée par l’Arduino, le capteur délivre un courant extrêmement faible, de l’ordre de quelques nanoampères (nA). Cette mesure ne peut donc pas se faire directement : nous devons amplifier le signal. De plus, nous utilisons l'Arduino Uno et ce microcontrôleur ne peut mesurer que des tensions (cf [datasheet](https://docs.arduino.cc/resources/datasheets/A000066-datasheet.pdf)). Nous avons donc besoin d'un montage amplificateur transimpédance pour convertir notre courant en une tension exploitable par les entrées analogiques de l'Arduino. Pour cela, nous avons choisi l’amplificateur opérationnel  LTC1050.
 
 Associé à cet amplificateur, nous réalisons un montage structuré en trois zones principales qui correspondent à des filtres pour améliorer la qualité du signal mesuré :
 
